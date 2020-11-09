@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+   <LinearLayout
+        android:id="@+id/uDetails"
+        android:layout_width="match_parent"
+       android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.21">
+
+        <ImageView
+            android:src="@raw/logo"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textStyle="bold"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="15dp"
+            android:text="Login to your account"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:textColor="#222"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:inputType="number"
+                android:layout_marginHorizontal="5dp"
+                android:textSize="15dp"
+                android:backgroundTint="#888888"
+                android:paddingBottom="10dp"
+                android:textColorHint="#888888"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_smartphone_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Mobile Number" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:textColor="#222"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+                android:layout_marginHorizontal="5dp"
+                android:backgroundTint="#888888"
+                android:paddingBottom="10dp"
+                android:textColorHint="#888888"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Password" />
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/loginClick"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/themecolor"
+            android:background="@drawable/btn_bg_login"
+            android:layout_height="40dp" >
+
+            <TextView android:id="@+id/login_text"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="17dp"
+                android:layout_centerInParent="true"
+                android:text="Login" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:id="@+id/loginProgress"
+                android:indeterminateTint="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:indeterminateTintMode="src_in" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:fontFamily="@font/rubikregular"
+            android:textSize="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="textEnd"
+            android:id="@+id/forgot"
+            android:textColor="#1E88E5"
+            android:text="Forgot Password ? "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvText"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="29dp"
+                android:text="Or Signup with"
+                android:textColor="#721E1E1E"/>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingVertical="7.5dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:text="  Login with Google"
+                android:layout_weight="1"
+                android:id="@+id/signGoogle"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:backgroundTint="#1E88E5"
+                android:background="@drawable/btn_bg"
+                android:paddingLeft="12dp"
+                android:textColor="#fff"
+                android:drawableLeft="@drawable/ic_google"
+                android:textSize="15dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

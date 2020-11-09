@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_marginTop="-10dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/bgBannerCat"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"/>
+
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/CatTilte"
+                android:text="Great Offers!"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Top Rated Places "
+        android:textSize="17dp"
+        android:capitalize="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shopGridRecyclerSelectd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@raw/logo" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:lineHeight="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Cancellations and Refunds For Restaurants"
+            android:textColor="#222"
+            android:textSize="15dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="1. Cancellations"
+            android:textColor="#223"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="A. Customer Cancellations"
+            android:textColor="#223"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:lineHeight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="i. As a general rule you shall not be entitled to cancel your order once placed. You may choose to cancel your order only within one-minute of the order being placed by you. However, subject to your previous cancellation history, Flado reserves the right to deny any refund to you pursuant to a cancellation initiated by you even if the same is within one-minute."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:lineHeight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="ii. If you cancel your order after one minute of placing it, Flado shall have a right to charge you 100% of the order amount as the cancellation fee , with a right to either not to refund the order value in case your order is prepaid or recover from your subsequent order in case your order is postpaid, to compensate our restaurant/merchants and delivery partners."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="B. Non - Customer Cancellations"
+            android:textColor="#223"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:lineHeight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="i. Flado reserves the right to charge you cancellation fee for the orders constrained to be cancelled by Flado for reasons not attributable to Flado, including but not limited to:
+A. In the event if the address provided by you is either wrong or falls outside the delivery zone.
+B. Failure to contact you by phone or email at the time of delivering the order booking.
+C. Failure to deliver your order due to lack of information, direction or authorization from you at the time of delivery.
+D. Unavailability of all the items ordered by you at the time of booking the order.
+E. Unavailability of all the items ordered by you at the time of booking the order. However, in the unlikely event of an item on your order being unavailable, Flado will contact you on the phone number provided to us at the time of placing the order and inform you of such unavailability. In such an event you will be entitled to cancel the entire order and shall be entitled to a refund to an amount upto 100% of the order value.
+ii. In case of cancellations for the reasons (attributable) to Flado or the restaurant partner or delivery partners, Flado shall not charge you any cancellation fee.
+"            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:text="2. Refunds"
+            android:textColor="#223"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:lineHeight="20dp"
+            android:text="i. You shall also be entitled to a refund of portionate value in the event packaging of an item in an order or the complete order, is either tampered or damaged and you refuse to accept at the time of delivery.
+ii. You may be entitled to a refund upto 100% of the order value if Flado Delivery Partner fails to deliver the order to you due to a causes attributable to Flado, however such refunds will be assessed on a case to case basis by Flado Note: We do not penalise the Delivery Partner for delay, caused due to external factors.
+iii. Our decision on refunds shall be final and binding.
+3. In case of payment at the time of delivery, you will not be required to pay for:
+I. orders where packaging is either tampered or damaged at the time of delivery.
+II. wrong order being delivered.
+III. items missing from your order at the time of delivery."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:lineHeight="25dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="60dp"
+            android:text="Cancellations and Refunds For Groceries"
+            android:textColor="#222"
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:lineHeight="20dp"
+            android:text="1. Flado provides easy and hassle free cancellation policy. You can cancel your order any time before the order is out for delivery. After that you can contact us at email and contact no . for any other order related query ."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:lineHeight="25dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="60dp"
+            android:text="2. If the delivered product is defective?"
+            android:textColor="#222"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:lineHeight="20dp"
+            android:text="We have a hassle free return and replacement policy for our customers. If you are not satisfied with the delivered product, get in touch with our customer care support at email and we will immediately replace the product or we will adjust the entire amount of product into your Flado wallet .
+\n\n3. If Customer cancel any prepaid order so we can only refund into Flado wallet ."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

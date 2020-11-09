@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:clickable="false"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/enterMsg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        tools:layout_editor_absoluteX="-21dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/rubikregular"
+            android:text="Send Feedback "
+            android:textColor="#444"
+            android:textSize="23dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us what you love about the app, or what could be doing better."
+            android:textColor="#666" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/enterMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/rubikregular"
+        android:hint="Enter feedback / Query"
+        android:inputType="textMultiLine"
+        android:textColor="#4A4A4A"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitFeed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitFeed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/btn_bg_main"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

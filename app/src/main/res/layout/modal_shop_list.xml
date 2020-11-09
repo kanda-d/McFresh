@@ -1,0 +1,88 @@
+<androidx.cardview.widget.CardView
+    android:layout_weight="1"
+    android:id="@+id/clickShop"
+    android:layout_marginVertical="10dp"
+    android:layout_margin="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    app:contentPadding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_weight="1"
+            android:id="@+id/shop_thumb"
+            android:layout_marginRight="10dp"
+            android:layout_width="230dp"
+            android:layout_height="65dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shop_title"
+                android:text="Chowpaty By Captain"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginVertical="2dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/shop_desc"
+                android:textSize="12dp"
+                android:text="North Indian, Chinese"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_gravity="right|top"
+            android:layout_height="18dp"
+            android:id="@+id/shopRating"
+            android:text="5.0"
+            android:paddingStart="2.8dp"
+            android:textSize="11dp"
+            android:background="#1E88E5"
+            android:layout_marginRight="-50dp"
+            android:textColor="@color/fontWhite"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sCatDiscount"
+            android:textSize="13dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/rubikregular"
+            android:text="60% Off"
+            android:layout_marginRight="1dp"
+            android:layout_gravity="right|bottom"
+            android:textColor="#00AF08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

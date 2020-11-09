@@ -1,0 +1,561 @@
+<resources>
+    <string name="app_name">McFresh</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="main_page_selected">%s page is selected</string>
+    <string name="title_activity_home">Home</string>
+
+
+    <string name="about">
+
+    </string>
+    <string name="term1">
+       Thank you for using McFresh. These Terms of Service (the "Terms") are intended to make you aware of your legal rights and
+responsibilities with respect to your access to and use of the McFresh website at www.McFresh.com (the "Site") and any
+related mobile or software applications ("McFresh Platform") including but not limited to delivery of information via the
+website whether existing now or in the future that link to the Terms (collectively, the "Services").
+\n\n\nThese Terms are effective for all existing and future McFresh users, including but without limitation to users having
+access to restaurant business page to manage their claimed business listings.
+\n\nPlease read these Terms carefully. By accessing or using the McFresh Platform, you are agreeing to these Terms and
+concluding a legally binding contract with McFresh Private Limited(Formerly known as McFresh Media Private Limited) and/or
+its affiliates or, if you are in the United States, with McFresh USA, LLC and/or its affiliates (hereinafter collectively
+referred to as "McFresh"). You may not use the Services if you do not accept the Terms or are unable to be bound by the
+Terms. Your use of the McFresh Platform is at your own risk, including the risk that you might be exposed to content that
+is objectionable, or otherwise inappropriate.
+
+
+    </string>
+    <string name="term2" >
+
+In order to use the Services, you must first agree to the Terms. You can accept the Terms by:\n\ni)  Clicking to accept or agree to the Terms, where it is made available to you by McFresh in the user interface for any
+    particular Service; or\n\nii) Actually using the Services. In this case, you understand and agree that McFresh will treat your use of the Services
+    as acceptance of the Terms from that point onwards.\n\nII. Definitions
+    </string>
+    <string name="term4">
+        User\n\n
+
+"User" or "You" or "Your" refers to you, as a user of the Services. A user is someone who accesses or uses the Services
+for the purpose of sharing, displaying, hosting, publishing, transacting, or uploading information or views or pictures
+and includes other persons jointly participating in using the Services including without limitation a user having access
+to restaurant business page to manage claimed business listings or otherwise.
+    </string>
+
+    <string name="term5">
+
+"Content" will include (but is not limited to) reviews, images, photos, audio, video, location data, nearby places, and
+all other forms of information or data. "Your content" or "User Content" means content that you upload, share or transmit
+to, through or in connection with the Services, such as likes, ratings, reviews, images, photos, messages, profile
+information, and any other materials that you publicly display or displayed in your account profile. "McFresh Content"
+means content that McFresh creates and make available in connection with the Services including, but not limited to, visual
+interfaces, interactive features, graphics, design, compilation, computer code, products, software, aggregate ratings,
+reports and other usage-related data in connection with activities associated with your account and all other elements and
+components of the Services excluding Your Content and Third Party Content. "Third Party Content" means content that comes
+from parties other than McFresh or its users and is available on the Services.
+
+    </string>
+
+
+    <string name="term6">
+
+    Restaurant(s)
+
+    "Restaurant" means the restaurants listed on McFresh and any related mobile or software applications of McFresh.
+
+    III. Eligibility to use the services
+
+    1. You hereby represent and warrant that you are at least eighteen (18) years of age or above and are fully able and
+    competent to understand and agree the terms, conditions, obligations, affirmations, representations, and warranties set
+    forth in these Terms.
+    2. Compliance with Laws. You are in compliance with all laws and regulations in the country in which you live when you
+    access and use the Services. You agree to use the Services only in compliance with these Terms and applicable law, and
+    in a manner that does not violate our legal rights or those of any third party(ies).
+
+    IV. Changes to the terms
+
+    McFresh may vary or amend or change or update these Terms, from time to time entirely at its own discretion. You shall be
+    responsible for checking these Terms from time to time and ensure continued compliance with these Terms. Your use of
+    McFresh Platform after any such amendment or change in the Terms shall be deemed as your express acceptance to such
+    amended/changed terms and you also agree to be bound by such changed/amended Terms.
+
+    V. Translation of the terms
+
+    McFresh may provide a translation of the English version of the Terms into other languages. You understand and agree that
+    any translation of the Terms into other languages is only for your convenience and that the English version shall govern
+    the terms of your relationship with McFresh. Furthermore, if there are any inconsistencies between the English version of
+    the Terms and its translated version, the English version of the Terms shall prevail over others.
+
+    VI. Provision of the services being offered by McFresh
+
+    1. McFresh is constantly evolving in order to provide the best possible experience and information to its users. You
+    acknowledge and agree that the form and nature of the Services which McFresh provides, may require effecting certain
+    changes in it, therefore, McFresh reserves the right to suspend/cancel, or discontinue any or all products or services
+    at any time without notice, make modifications and alterations in any or all of its contents, products and services
+    contained on the site without any prior notice.
+    2. We, the software, or the software application store that makes the software available for download may include
+    functionality to automatically check for updates or upgrades to the software. Unless your device, its settings, or
+    computer software does not permit transmission or use of upgrades or updates, you agree that we, or the applicable
+    software or software application store, may provide notice to you of the availability of such upgrades or updates and
+    automatically push such upgrade or update to your device or computer from time-to-time. You may be required to install
+    certain upgrades or updates to the software in order to continue to access or use the Services, or portions thereof
+    (including upgrades or updates designed to correct issues with the Services). Any updates or upgrades provided to you
+    by us under the Terms shall be considered part of the Services.
+    3. You acknowledge and agree that if McFresh disables access to your account, you may be prevented from accessing the
+    Services, your account details or any files or other content, which is contained in your account.
+    4. You acknowledge and agree that while McFresh may not currently have set a fixed upper limit on the number of
+    transmissions you may send or receive through the Services, McFresh may set such fixed upper limits at any time, at
+    McFreshs discretion.
+    5. By using McFreshs Services you agree to the following disclaimers:
+
+    i) The Content on these Services is for informational purposes only. McFresh disclaims any liability for any information
+    that may have become outdated since the last time the particular piece of information was updated. McFresh reserves
+    the right to make changes and corrections to any part of the Content on these Services at any time without prior
+    notice. McFresh does not guarantee quality of the Goods, the prices listed in menus or the availability of all menu
+    items at any restaurant. Unless stated otherwise, all pictures and information contained on these Services are
+    believed to be owned by or licensed to McFresh. Please email a takedown request (by using the "Contact Us" link on
+    the home page) to the webmaster if you are the copyright owner of any Content on these Services and you think the
+    use of the above material violates Your copyright in any way. Please indicate the exact URL of the webpage in your
+    request. All images shown here have been digitized by McFresh. No other party is authorized to reproduce or republish
+    these digital versions in any format whatsoever without the prior written permission of McFresh.
+    ii) Any certification, licenses or permits ("Certification") or information in regard to such Certification that may be
+    displayed on the Restaurants listing page on the Platform is for informational purposes only. Such Certification is
+    displayed by McFresh on an as available basis that is provided to McFresh by the Restaurant partner(s). McFresh does
+    not make any warranties about the validity, authenticity, reliability and accuracy of such Certification or any
+    information displayed in this regard. Any reliance by a user upon the Certification or information thereto shall be
+    strictly at such users own risk and McFresh in no manner shall assume any liability whatsoever for any losses or
+    damages in connection with the use of this information or for any inaccuracy, invalidity or discrepancy in the
+    Certification or non-compliance of any applicable local laws or regulations by the Restaurant partner.
+    6. McFresh reserves the right to charge a subscription and/or membership and/or a convenience fees from a user, by giving
+    reasonable prior notice, in respect of any product, service or any other aspect of the McFresh Platform anytime in
+    future.
+    7. McFresh may from time to time introduce referral and/or incentive based programs for its users (Program). These
+    Program(s) maybe governed by their respective terms and conditions. By participating in the Program, Users are bound by
+    the Program terms and conditions as well as the McFresh Platform terms. Further, McFresh reserves the right to
+    terminate / suspend the Users account and/or credits / points earned and/or participation of the User in the Program
+    if McFresh determines in its sole discretion that the User has violated the rules of the Program and/or has been
+    involved in activities that are in contravention of the Program terms and/or McFresh Platform terms or has engaged in
+    activities which are fraudulent / unlawful in nature. Furthermore, McFresh reserves the right to modify, cancel and
+    discontinue its Program without notice to the User.
+
+    VII. Use of services by you or user
+
+    1. McFresh User Account Including Claim Your Business Listing Access
+
+    a. You must create an account in order to use some of the features offered by the Services, including without limitation
+    to claim your business listing on the Services. Use of any personal information you provide to us during the account
+    creation process is governed by our Privacy Policy. You must keep your password confidential and you are solely
+    responsible for maintaining the confidentiality and security of your account, all changes and updates submitted
+    through your account, and all activities that occur in connection with your account.
+    b. You may also be able to register to use the Services by logging into your account with your credentials from certain
+    third party social networking sites (e.g., Facebook). You confirm that you are the owner of any such social media
+    account and that you are entitled to disclose your social media login information to us. You authorize us to collect
+    your authentication information, and other information that may be available on or through your social media account
+    consistent with your applicable settings and instructions.
+    c. In creating an account and/or claiming your business listing, you represent to us that all information provided to
+    us in such process is true, accurate and correct, and that you will update your information as and when necessary in
+    order to keep it accurate. If you are creating an account or claiming a business listing, then you represent to us
+    that you are the owner or authorized agent of such business. You may not impersonate someone else, create or use an
+    account for anyone other than yourself, provide an email address other than your own, create multiple accounts or
+    business listings except as otherwise authorized by us, or provide or use false information to obtain access to a
+    business listing on the Services that you are not legally entitled to claim. You acknowledge that any false claiming
+    of a business listing may cause McFresh or third parties to incur substantial economic damages and losses for which you
+    may be held liable and accountable.
+    d. You are also responsible for all activities that occur in your account. You agree to notify us immediately of any
+    unauthorized use of your account in order to enable us to take necessary corrective action. You also agree that you
+    will not allow any third party to use your McFresh account for any purpose and that you will be liable for such
+    unauthorized access.
+    e. By creating an account, you agree to receive certain communications in connection with McFresh Platform or Services.
+    For example, you might receive comments from other Users or other users may follow the activity to do on your account.
+    You can opt-out or manage your preferences regarding non-essential communications through account settings.
+
+    2. Others Terms
+
+    a. In order to connect you to certain restaurants, we provide value added telephony services through our phone lines,
+    which are displayed on the specific restaurant listing page on the McFresh Platform, which connect directly to
+    restaurants phone lines. We record all information regarding this call including the voice recording of the
+    conversation between you, and the restaurant (for internal billing tracking purposes and customer service improvement
+    at the restaurants end). If you do not wish that your information be recorded in such a manner, please do not use the
+    telephone services provided by McFresh. You explicitly agree and permit McFresh to record all this information when you
+    avail the telephony services through the McFresh provided phone lines on the McFresh Platform.
+    b. You agree to use the Services only for purposes that are permitted by (a) the Terms and (b) any applicable law,
+    regulation or generally accepted practices or guidelines in the relevant jurisdictions.
+    c. You agree to use the data owned by McFresh (as available on the Services or through any other means like API etc.) only
+    for personal use/purposes and not for any commercial use (other than in accordance with Claim Your Business Listing
+    access) unless agreed to by/with McFresh in writing.
+    d. You agree not to access (or attempt to access) any of the Services by any means other than the interface that is
+    provided by McFresh, unless you have been specifically allowed to do so, by way of a separate agreement with McFresh.
+    You specifically agree not to access (or attempt to access) any of the Services through any automated means (including
+    use of scripts or web crawlers) and shall ensure that you comply with the instructions set out in any robots.txt file
+    present on the Services.
+    e. You agree that you will not engage in any activity that interferes with or disrupts the Services (or the servers and
+    networks which are connected to the Services). You shall not delete or revise any material or information posted by
+    any other User(s), shall not engage in spamming, including but not limited to any form of emailing, posting or
+    messaging that is unsolicited.
+
+    VIII. Content
+    </string>
+
+    <string name="term7">
+        Any personal information about you collected whilst visiting such websites is not governed by this Policy. Flado shall not be responsible for and has no control over the practices and content of any website accessed using the links contained on the Flado Platform. This Policy shall not apply to any information you may disclose to any of our service providers/service personnel which we do not require you to disclose to us or any of our service providers under this Policy.
+    </string>
+
+    <string name="term8">
+
+
+
+1. Ownership of McFresh Content and Proprietary Rights
+
+a. We are the sole and exclusive copyright owners of the Services and our Content. We also exclusively own the copyrights,
+   trademarks, service marks, logos, trade names, trade dress and other intellectual and proprietary rights throughout the
+   world (the "IP Rights") associated with the Services and McFresh Content, which may be protected by copyright, patent,
+   trademark and other applicable intellectual property and proprietary rights and laws. You acknowledge that the Services
+   contain original works and have been developed, compiled, prepared, revised, selected, and arranged by us and others
+   through the application of methods and standards of judgment developed and applied through the expenditure of
+   substantial time, effort, and money and constitutes valuable intellectual property of us and such others. You further
+   acknowledge that the Services may contain information which is designated as confidential by McFresh and that you shall
+   not disclose such information without McFreshs prior written consent.
+b. You agree to protect McFreshs proprietary rights and the proprietary rights of all others having rights in the Services
+   during and after the term of this agreement and to comply with all reasonable written requests made by us or our
+   suppliers and licensors of content or otherwise to protect their and others contractual, statutory, and common law
+   rights in the Services. You acknowledge and agree that McFresh (or McFreshs licensors) own all legal right, title and
+   interest in and to the Services, including any IP Rights which subsist in the Services (whether those rights happen to
+   be registered or not, and wherever in the world those rights may exist). You further acknowledge that the Services may
+   contain information which is designated as confidential by McFresh and that you shall not disclose such information
+   without McFreshs prior written consent. Unless you have agreed otherwise in writing with McFresh, nothing in the gives
+   you a right to use any of McFreshs trade names, trademarks, service marks, logos, domain names, and other distinctive
+   brand features.
+c. You agree not to use any framing techniques to enclose any trademark or logo or other proprietary information of McFresh;
+   or remove, conceal or obliterate any copyright or other proprietary notice or source identifier, including without
+   limitation, the size, color, location or style of any proprietary mark(s). Any infringement shall lead to appropriate
+   legal proceedings against you at appropriate forum for seeking all available/possible remedies under applicable laws of
+   the country of violation. You cannot modify, reproduce, publicly display or exploit in any form or manner whatsoever
+   any of the McFreshs Content in whole or in part except as expressly authorized by McFresh.
+d. To the fullest extent permitted by applicable law, we neither warrant nor represent that your use of materials
+   displayed on the Services will not infringe rights of third parties not owned by or affiliated with us. You agree to
+   immediately notify us upon becoming aware of any claim that the Services infringe upon any copyright trademark, or
+   other contractual, intellectual, statutory, or common law rights by following the instructions contained below in
+   section XVI.
+
+2. Your License to McFresh Content
+
+a. We grant you a personal, limited, non-exclusive and non-transferable license to access and use the Services only as
+   expressly permitted in these Terms. You shall not use the Services for any illegal purpose or in any manner
+   inconsistent with these Terms. You may use information made available through the Services solely for your personal,
+   non-commercial use. You agree not to use, copy, display, distribute, modify, broadcast, translate, reproduce, reformat,
+   incorporate into advertisements and other works, sell, promote, create derivative works, or in any way exploit or allow
+   others to exploit any of McFresh Content in whole or in part except as expressly authorized by us. Except as
+   expressly granted to you in writing, we do not grant you any other express or implied right or license to the Services,
+   McFresh Content or our IP Rights.
+b. Any violation by you of the license provisions contained in this Section may result in the immediate termination of
+   your right to use the Services, as well as potential liability for copyright and other IP Rights infringement depending
+   on the circumstances.
+
+3. McFresh License to Your or User Content
+
+By submitting Your Content you hereby irrevocably grant McFresh a perpetual, irrevocable, world-wide, non-exclusive, fully
+paid and royalty-free, assignable, sub-licensable and transferable license and right to use Your Content (including
+content shared by any business user having access to a restaurant business page to manage claimed business listings or
+otherwise) and all IP Rights therein for any purpose including API partnerships with third parties and in any media
+existing now or in future. By "use" we mean use, copy, display, distribute, modify, translate, reformat, incorporate into
+advertisements and other works, analyze, promote, commercialize, create derivative works, and in the case of third party
+services, allow their users and others to do the same. You grant us the right to use the name or username that you submit
+in connection with Your Content. You irrevocably waive, and cause to be waived, any claims and assertions of moral rights
+or attribution with respect to Your Content brought against McFresh or its Users, any third party services and their users.
+
+4. Representations Regarding Your or User Content
+
+a. You are responsible for Your Content. You represent and warrant that you are the sole author of, own, or otherwise
+   control all of the rights of Your Content or have been granted explicit permission from the rights holder to submit
+   Your Content; Your Content was not copied from or based in whole or in part on any other content, work, or
+   Your Content was not submitted via the use of any automated process such as a script bot; use of Your Content by us,
+   third party services, and our and any third party users will not violate or infringe any rights of yours or any
+   party; Your Content is truthful and accurate; and Your Content does not violate the Guidelines and Policies or any
+   applicable laws
+b. If Your Content is a review, you represent and warrant that you are the sole author of that review; the review reflects
+   an actual dining experience that you had; you were not paid or otherwise remunerated in connection with your authoring
+   or posting of the review; and you had no financial, competitive, or other personal incentive to author or post a review t
+   hat was not a fair expression of your honest opinion.
+c. You assume all risks associated with Your Content, including anyones reliance on its quality, accuracy, or reliability,
+   or any disclosure by you of information in Your Content that makes you personally identifiable. While we reserve the
+   right to remove Content, we do not control actions or Content posted by our users and do not guarantee the accuracy,
+   integrity or quality of any Content. You acknowledge and agree that Content posted by users and any and all liability a
+   rising from such Content is the sole responsibility of the user who posted the content, and not McFresh.
+
+5. Content Removal
+
+We reserve the right, at any time and without prior notice, to remove, block, or disable access to any Content that we,
+for any reason or no reason, consider to be objectionable, in violation of the Terms or otherwise harmful to the Services
+or our users in our sole discretion. Subject to the requirements of applicable law, we are not obligated to return any of
+Your Content to you under any circumstances. Further, the Restaurant reserves the right to delete any images and pictures
+forming part of User Content, from such Restaurants listing page at its sole discretion.
+
+6. Third Party Content and Links
+
+a. Some of the content available through the Services may include or link to materials that belong to third parties, such
+   as third party reservation services or online food delivery/ordering. Please note that your use of such third party
+   services will be governed by the terms of service and privacy policy applicable to the corresponding third party. We
+   may obtain business addresses, phone numbers, and other contact information from third party vendors who obtain their
+   data from public sources.
+b. We have no control over, and make no representation or endorsement regarding the accuracy, relevancy, copyright
+   compliance, legality, completeness, timeliness or quality of any product, services, advertisements and other content
+   appearing in or linked to from the Services. We do not screen or investigate third party material before or after
+   including it on our Services.
+c. We reserve the right, in our sole discretion and without any obligation, to make improvements to, or correct any error
+   or omissions in, any portion of the content accessible on the Services. Where appropriate, we may in our sole
+   discretion and without any obligation, verify any updates, modifications, or changes to any content accessible on the
+   Services, but shall not be liable for any delay or inaccuracies related to such updates. You acknowledge and agree that
+   McFresh is not responsible for the availability of any such external sites or resources, and does not endorse any
+   advertising, products or other materials on or available from such web sites or resources.
+d. Third party content, including content posted by our users, does not reflect our views or that of our parent,
+   subsidiary, affiliate companies, branches, employees, officers, directors, or shareholders. In addition, none of the
+   content available through the Services is endorsed or certified by the providers or licensors of such third party
+   content. We assume no responsibility or liability for any of Your Content or any third party content.
+e. You further acknowledge and agree that McFresh is not liable for any loss or damage which may be incurred by you as a
+   result of the availability of those external sites or resources, or as a result of any reliance placed by you on the
+   completeness, accuracy or existence of any advertising, products or other materials on, or available from, such web
+   sites or resources. Without limiting the generality of the foregoing, we expressly disclaim any liability for any
+   offensive, defamatory, illegal, invasive, unfair, or infringing content provided by third parties.
+
+7. User Reviews
+
+a. User reviews or ratings for Restaurants do not reflect the opinion of McFresh. McFresh receives multiple reviews or
+   ratings for Restaurants by users, which reflect the opinions of the Users. It is pertinent to state that each and every
+   review posted on McFresh is the personal opinion of the user/reviewer only. McFresh is a neutral platform, which solely
+   provides a means of communication between users/reviewers including users or restaurant owners/representatives with
+   access to restaurant business page. The advertisements published on the McFresh Platform are independent of the reviews
+   recieved by such advertisers.
+b. We are a neutral platform and we dont arbitrate disputes, however in case if someone writes a review that the
+   restaurant does not consider to be true, the best option for the restaurant representative would be to contact the
+   reviewer or post a public response in order to clear up any misunderstandings. If the Restaurant believes that any
+   particular users review violates any of the McFresh policies, the restaurant may write to us at neutrality@McFresh.com
+   and bring such violation to our attention. McFresh may remove the review in its sole discretion if review is in
+   violation of the Terms, or content guidelines and policies or otherwise harmful to the Services
+
+IX. Content guidelines and privacy policy
+
+1. Content Guidelines
+
+You represent that you have read, understood and agreed to our Guidelines and Polices related to Content
+
+2. Privacy Policy
+
+You represent that you have read understood and agreed to our Privacy Policy. Please note that we may disclose information
+about you to third parties or government authorities if we believe that such a disclosure is reasonably necessary to
+(i) take action regarding suspected illegal activities; (ii) enforce or apply our Terms and Privacy Policy; (iii) comply
+with legal process or other government inquiry, such as a search warrant, subpoena, statute, judicial proceeding, or other
+legal process/notice served on us; or (iv) protect our rights, reputation, and property, or that of our users, affiliates,
+or the general public
+
+X. Restrictions on use
+
+1. Without limiting the generality of these Terms, in using the Services, you specifically agree not to post or transmit
+any content (including review) or engage in any activity that, in our sole discretion:
+
+a. Violate our Guidelines and Polices;
+b. Is harmful, threatening, abusive, harassing, tortious, indecent, defamatory, discriminatory, vulgar, profane, obscene,
+   libelous, hateful or otherwise objectionable, invasive of anothers privacy, relating or encouraging money laundering
+   or gambling;
+c. Constitutes an inauthentic or knowingly erroneous review, or does not address the goods and services, atmosphere, or
+   other attributes of the business you are reviewing.
+d. Contains material that violates the standards of good taste or the standards of the Services;
+e. Violates any third-party right, including, but not limited to, right of privacy, right of publicity, copyright,
+   trademark, patent, trade secret, or any other intellectual property or proprietary rights;
+f. Accuses others of illegal activity, or describes physical confrontations;
+g. Alleges any matter related to health code violations requiring healthcare department reporting. Refer to our Guidelines
+   and Policies for more details about health code violations.
+h. Is illegal, or violates any federal, state, or local law or regulation (for example, by disclosing or trading on inside
+   information in violation of securities law);
+i. Attempts to impersonate another person or entity;
+j. Disguises or attempts to disguise the origin of Your Content, including but not limited to by: (i) submitting Your
+   Content under a false name or false pretenses; or (ii) disguising or attempting to disguise the IP address from which
+   Your Content is submitted;
+k. Constitutes a form of deceptive advertisement or causes, or is a result of, a conflict of interest;
+l. Is commercial in nature, including but not limited to spam, surveys, contests, pyramid schemes, postings or reviews
+   submitted or removed in exchange for payment, postings or reviews submitted or removed by or at the request of the
+   business being reviewed, or other advertising materials;
+m. Asserts or implies that Your Content is in any way sponsored or endorsed by us;
+n. Contains material that is not in English or, in the case of products or services provided in foreign languages, the
+   language relevant to such products or services;
+o. Falsely states, misrepresents, or conceals your affiliation with another person or entity;
+p. Accesses or uses the account of another user without permission;
+q. Distributes computer viruses or other code, files, or programs that interrupt, destroy, or limit the functionality of
+   any computer software or hardware or electronic communications equipment;
+r. Interferes with, disrupts, or destroys the functionality or use of any features of the Services or the servers or
+   networks connected to the Services;
+s. "Hacks" or accesses without permission our proprietary or confidential records, records of another user, or those of
+   anyone else;
+t. Violates any contract or fiduciary relationship (for example, by disclosing proprietary or confidential information of
+   your employer or client in breach of any employment, consulting, or non-disclosure agreement);
+u. Decompiles, reverse engineers, disassembles or otherwise attempts to derive source code from the Services;
+v. Removes, circumvents, disables, damages or otherwise interferes with security-related features, or features that
+   enforce limitations on use of, the Services;
+w. Violates the restrictions in any robot exclusion headers on the Services, if any, or bypasses or circumvents other
+   measures employed to prevent or limit access to the Services;
+x. Collects, accesses, or stores personal information about other users of the Services;
+y. Is posted by a bot;
+z. Harms minors in any way;
+aa. Threatens the unity, integrity, defense, security or sovereignty of India or of the country of use, friendly relations
+    with foreign states, or public order or causes incitement to the commission of any cognizable offence or prevents
+    investigation of any offence or is insulting any other nation;
+ab. Modifies, copies, scrapes or crawls, displays, publishes, licenses, sells, rents, leases, lends, transfers or
+    otherwise commercialize any rights to the Services or Our Content; or
+ac. Attempts to do any of the foregoing.
+    </string>
+
+
+    <string name="term9">
+
+2. You acknowledge that McFresh has no obligation to monitor your – or anyone elses – access to or use of the Services for
+   violations of the Terms, or to review or edit any content. However, we have the right to do so for the purpose of
+   operating and improving the Services (including without limitation for fraud prevention, risk assessment, investigation
+   and customer support purposes), to ensure your compliance with the Terms and to comply with applicable law or the order
+   or requirement of legal process, a court, consent decree, administrative agency or other governmental body
+3. You hereby agree and assure McFresh that the McFresh Platform/Services shall be used for lawful purposes only and that
+   you will not violate laws, regulations, ordinances or other such requirements of any applicable Central, Federal State
+   or local government or international law(s). You shall not upload, post, email, transmit or otherwise make available
+   any unsolicited or unauthorized advertising, promotional materials, junk mail, spam mail, chain letters or any other
+   form of solicitation, encumber or suffer to exist any lien or security interest on the subject matter of these Terms or
+   to make any representation or warranty on behalf of McFresh in any form or manner whatsoever.
+4. Any Content uploaded by you, shall be subject to relevant laws of India and of the country of use and may be disabled,
+   or and may be subject to investigation under applicable laws. Further, if you are found to be in non-compliance with
+   the laws and regulations, these terms, or the privacy policy of the McFresh Platform, McFresh shall have the right to
+   immediately block your access and usage of the McFresh Platform and McFresh shall have the right to remove any
+   non-compliant content and or comment forthwith, uploaded by you and shall further have the right to take appropriate
+   recourse to such remedies as would be available to it under various statutes.
+
+XI. User feedback
+
+1. If you share or send any ideas, suggestions, changes or documents regarding McFreshs existing business ("Feedback"),
+   you agree that (i) your Feedback does not contain the confidential, secretive or proprietary information of third
+   parties, (ii) McFresh is under no obligation of confidentiality with respect to such Feedback, and shall be free to
+   use the Feedback on an unrestricted basis (iii) McFresh may have already received similar Feedback from some other user
+   or it may be under consideration or in development, and (iv) By providing the Feedback, you grant us a binding,
+   non-exclusive, royalty-free, perpetual, global license to use, modify, develop, publish, distribute and sublicense the
+   Feedback, and you irrevocably waive, against McFresh and its users any claims/assertions, whatsoever of any nature, with
+   regard to such Feedback.
+2. Please provide only specific Feedback on McFreshs existing products or marketing strategies; do not include any ideas
+   that McFreshs policy will not permit it to accept or consider.
+3. Notwithstanding the abovementioned clause, McFresh or any of its employees do not accept or consider unsolicited ideas,
+   including ideas for new advertising campaigns, new promotions, new or improved products or technologies, product
+   enhancements, processes, materials, marketing plans or new product names. Please do not submit any unsolicited ideas,
+   original creative artwork, suggestions or other works ("Submissions") in any form to McFresh or any of its employees.
+4. The purpose of this policy is to avoid potential misunderstandings or disputes when McFreshs products or marketing
+   strategies might seem similar to ideas submitted to McFresh. If, despite our request to not send us your ideas, you
+   still submit them, then regardless of what your letter says, the following terms shall apply to your Submissions.
+5. Terms of Idea Submission
+   You agree that: (1) your Submissions and their Contents will automatically become the property of McFresh, without any
+   compensation to you; (2) McFresh may use or redistribute the Submissions and their contents for any purpose and in any
+   way; (3) there is no obligation for McFresh to review the Submission; and (4) there is no obligation to keep any
+   Submissions confidential.
+
+XII. Advertising
+
+1. Some of the Services are supported by advertising revenue and may display advertisements and promotions. These
+   advertisements may be targeted to the content of information stored on the Services, queries made through the Services
+   or other information. The manner, mode and extent of advertising by McFresh on the Services are subject to change
+   without specific notice to you. In consideration for McFresh granting you access to and use of the Services, you agree
+   that McFresh may place such advertising on the Services.
+2. Part of the site may contain advertising information or promotional material or other material submitted to McFresh by
+   third parties or Users. Responsibility for ensuring that material submitted for inclusion on the McFresh Platform or
+   mobile apps complies with applicable international and national law is exclusively on the party providing the
+   information/material. Your correspondence or business dealings with, or participation in promotions of, advertisers
+   other than McFresh found on or through the McFresh Platform and or mobile apps, including payment and delivery of related
+   goods or services, and any other terms, conditions, warranties or representations associated with such dealings, shall
+   be solely between you and such advertiser. McFresh will not be responsible or liable for any error or omission,
+   inaccuracy in advertising material or any loss or damage of any sort incurred as a result of any such dealings or as a
+   result of the presence of such other advertiser(s) on the McFresh Platform and mobile application.
+3. For any information related to a charitable campaign ("Charitable Campaign") sent to Users and/or displayed on the
+   McFresh Platform where Users have an option to donate money by way of (a) payment on a third party website; or
+   (b) depositing funds to a third party bank account, McFresh is not involved in any manner in the collection or
+   utilization of funds collected pursuant to the Charitable Campaign. McFresh does not accept any responsibility or
+   liability for the accuracy, completeness, legality or reliability of any information related to the Charitable Campaign.
+   Information related to the Charitable Campaign is displayed for informational purposes only and Users are advised to do
+   an independent verification before taking any action in this regard.
+
+XIII. Additional Terms and Conditions for Users using the various services offered by McFresh:
+
+1. ONLINE ORDERING:
+
+a. McFresh provides online ordering services by entering into contractual arrangements with restaurant partners
+   (“Restaurant Partners”) and Stores (as defined below) on a principal-to-principal basis for the purpose of listing
+   their menu items or the Products (as defined below) for online ordering by the Users on the McFresh Platform.
+b. The Users can access the menu items or Products listed on the McFresh Platform and place online orders against the
+   Restaurant Partner(s)/Store(s) through McFresh.
+c. Your request to order food and beverages or Products from a Restaurant Partner or a Store on the Restaurant
+   Partner/Store page on the McFresh Platform shall constitute an unconditional and irrevocable authorization issued in
+   favor of McFresh to place online orders for food and beverages or Products against the Restaurant Partner(s)/Store(s)
+   on your behalf.
+d. Delivery of an order placed by you through the McFresh Platform may either be undertaken directly by the Restaurant
+   Partner or the Store against whom you have placed an order, or facilitated by McFresh through third-party who may be
+   available to provide delivery services to you (“Delivery Partners”). In both these cases, McFresh is merely acting as
+   an intermediary between you and the Delivery Partners, or you and the Restaurant Partner or the Store, as the case may
+   be.
+e. The acceptance by a Delivery Partner of undertaking delivery of your order shall constitute a contract of service under
+   the Consumer Protection Act, 2019 or any successor legislations, between you and the Delivery Partner, to which McFresh
+   is not a party under any applicable law. It is clarified that McFresh does not provide any delivery or logistics
+   services and only enables the delivery of food and beverages or Products ordered by the Users through the McFresh
+   Platform by connecting the Users with the Delivery Partners or the Restaurant Partners or the Store, as the case may be.
+f. Where McFresh is facilitating delivery of an order placed by you, McFresh shall not be liable for any acts or omissions
+   on part of the Delivery Partner including deficiency in service, wrong delivery of order, time taken to deliver the
+   order, order package tampering, etc.
+g. You may be charged a delivery fee for delivery of your order by the Delivery Partner or the Restaurant Partner or the
+   Store, as the Delivery Partner or the Restaurant Partner or the Store may determine (“Delivery Charges"). You agree
+   that McFresh is authorized to collect, on behalf of the Restaurant Partner or the Delivery Partner or the Store, the
+   Delivery Charges for the delivery service provided by the Restaurant Partner or the Store or the Delivery Partner, as
+   the case may be. The Delivery Charges may vary from order to order, which may be determined on multiple factors which
+   shall include but not be limited to Restaurant Partner / Store, order value, distance, demand during peak hours. McFresh
+   will use reasonable efforts to inform you of the Delivery Charges that may apply to you, provided you will be
+   responsible for Delivery Charges incurred for your order regardless of your awareness of such Delivery Charges.
+
+A. Online Ordering with Restaurant Partners:
+a. All prices listed on the McFresh Platform are provided by the Restaurant Partner at the time of publication on the
+   McFresh Platform and have been placed as received from the Restaurant Partner. While we take great care to keep them up
+   to date, the final price charged to you by the Restaurant Partner may change at the time of delivery. In the event of
+   a conflict between price on the McFresh Platform and price charged by the Restaurant Partner, the price charged by the
+   Restaurant Partner shall be deemed to be the correct price except Delivery Charge of McFresh.
+b. Pickup/Takeaway: When You opt for a Pickup/Takeaway (as defined below) You agree to be solely liable to ensure
+   compliance with the conditions governing the Takeaway at the time of placing the Order, and McFresh shall not be liable
+   in any manner in this regard. For the purpose of clarity, Pickup (in India)/Takeaway (in all other jurisdictions) would
+   mean where a Restaurant Partner has agreed to provide an option to the Users to collect the Order themselves from the
+   Restaurant Partner on which such an Order is placed. McFresh accepts no liability associated with food preparation by
+   the Restaurant Partner accepting the Order, and all food preparation and hand over through Takeaway are the sole
+   responsibility of the Restaurant Partner accepting the Order. The Pickup/Takeaway times for collection are provided by
+   the Restaurant Partner and are only estimates.
+
+XIV. Disclaimer of warranties, limitation of liability, and Indemnification
+
+    </string>
+
+
+    <string name="term10">
+
+
+1. Disclaimer of Warranties\n\nYOU ACKNOWLEDGE AND AGREE THAT THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" AND THAT YOUR USE OF THE SERVICES SHALL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, McFresh, ITS AFFILIATES AND THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, AFFILIATES, BRANCHES, SUBSIDIARIES, AND LICENSORS ("McFresh PARTIES") DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES INCLUDING MOBILE APPS AND YOUR USE OF THEM. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, THE McFresh PARTIES MAKE NO WARRANTIES OR REPRESENTATIONS THAT THE SERVICES HAVE BEEN AND WILL BE PROVIDED WITH DUE SKILL, CARE AND DILIGENCE OR ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES CONTENT AND ASSUME NO RESPONSIBILITY FOR ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, (II) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (III) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION STORED THEREIN, (IV) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (V) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES THROUGH THE ACTIONS OF ANY THIRD PARTY, (VI) ANY LOSS OF YOUR DATA OR CONTENT FROM THE SERVICES AND/OR (VII) ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE SERVICES IS DONE AT YOUR OWN DISCRETION AND RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR OTHER DEVICE OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIAL. THE McFresh PARTIES WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. YOU ARE SOLELY RESPONSIBLE FOR ALL OF YOUR COMMUNICATIONS AND INTERACTIONS WITH OTHER USERS OF THE SERVICES AND WITH OTHER PERSONS WITH WHOM YOU COMMUNICATE OR INTERACT AS A RESULT OF YOUR USE OF THE SERVICES. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM McFresh OR THROUGH OR FROM THE SERVICES SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THE TERMS. UNLESS YOU HAVE BEEN EXPRESSLY AUTHORIZED TO DO SO IN WRITING BY McFresh, YOU AGREE THAT IN USING THE SERVICES, YOU WILL NOT USE ANY TRADE MARK, SERVICE MARK, TRADE NAME, LOGO OF ANY COMPANY OR ORGANIZATION IN A WAY THAT IS LIKELY OR INTENDED TO CAUSE CONFUSION ABOUT THE OWNER OR AUTHORIZED USER OF SUCH MARKS, NAMES OR LOGOS.
+
+2. Limitation of Liability\n\nTO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE McFresh PARTIES BE LIABLE TO YOU FOR ANY DAMAGES RESULTING FROM ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, AND/OR (II) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES INCLUDING MOBILE APP, AND/OR (III) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION STORED THEREIN, AND/OR (IV) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM OUR SERVERS, AND/OR (V) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE, WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, AND/OR (VI) ANY LOSS OF YOUR DATA OR CONTENT FROM THE SERVICES, AND/OR (VII) ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF YOUR USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT THE McFresh PARTIES ARE ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND/OR (VIII) THE DISCLOSURE OF INFORMATION PURSUANT TO THESE TERMS OR OUR PRIVACY POLICY, AND/OR (IX) YOUR FAILURE TO KEEP YOUR PASSWORD OR ACCOUNT DETAILS SECURE AND CONFIDENTIAL, AND/OR (X) LOSS OR DAMAGE WHICH MAY BE INCURRED BY YOU, INCLUDING BUT NOT LIMITED TO LOSS OR DAMAGE AS A RESULT OF RELIANCE PLACED BY YOU ON THE COMPLETENESS, ACCURACY OR EXISTENCE OF ANY ADVERTISING, OR AS A RESULT OF ANY RELATIONSHIP OR TRANSACTION BETWEEN YOU AND ANY ADVERTISER OR SPONSOR WHOSE ADVERTISING APPEARS ON THE SERVICES, AND/OR DELAY OR FAILURE IN PERFORMANCE RESULTING FROM CAUSES BEYOND McFreshS REASONABLE CONTROL. IN NO EVENT SHALL THE McFresh PARTIES BE LIABLE TO YOU FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY OR CONSEQUENTIAL DAMAGES WHATSOEVER, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, INCLUDING BUT NOT LIMITED TO, ANY LOSS OF PROFIT (WHETHER INCURRED DIRECTLY OR INDIRECTLY), ANY LOSS OF GOODWILL OR BUSINESS REPUTATION, ANY LOSS OF DATA SUFFERED, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR OTHER INTANGIBLE LOSS.
+Indemnification
+
+You agree to indemnify, defend, and hold harmless the McFresh Parties from and against any third party claims, damages (actual and/or consequential), actions, proceedings, demands, losses, liabilities, costs and expenses (including reasonable legal fees) suffered or reasonably incurred by us arising as a result of, or in connection with: (i) Your Content, (ii) your unauthorized use of the Services, or products or services included or advertised in the Services; (iii) your access to and use of the Services; (iv) your violation of any rights of another party; or (v) your breach of these Terms, including, but not limited to, any infringement by you of the copyright or intellectual property rights of any third party. We retain the exclusive right to settle, compromise and pay, without your prior consent, any and all claims or causes of action which are brought against us. We reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us and you agree to cooperate with our defense of these claims. You agree not to settle any matter in which we are named as a defendant and/or for which you have indemnity obligations without our prior written consent. We will use reasonable efforts to notify you of any such claim, action or proceeding upon becoming aware of it.
+    </string>
+
+
+
+    <string name="term11">
+    </string>
+
+</resources>

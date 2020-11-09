@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:id="@+id/rl_mainActionbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints">
+
+
+
+                <EditText
+                    android:id="@+id/searchShops"
+                    android:imeOptions="actionSearch"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="text"
+                    android:layout_marginLeft="10dp"
+                    android:elevation=".5dp"
+                    android:layout_marginRight="110dp"
+                    android:textSize="16dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Search for Shops"
+                    android:focusedByDefault="false"
+                    android:drawableLeft="@drawable/sidepadding"
+                    android:background="@drawable/search_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"/>
+
+            <LinearLayout
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="-120dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cartclick"
+                    android:layout_marginTop="4dp"
+                    android:onClick="openCart"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_cart_icon" />
+
+                <FrameLayout
+                    android:layout_centerVertical="true"
+                    style="?attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/notifyIcon"
+                    android:onClick="openNotify"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_notification"/>
+
+                    <TextView
+                        android:id="@+id/notify_badge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="right|end|top"
+                        android:layout_marginEnd="-5dp"
+                        android:layout_marginRight="-3dp"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:text="0"
+                        android:textSize="10sp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <fragment
+        android:layout_marginTop="5dp"
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    </LinearLayout>
+
+<!--
+ <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mbn_circleColor="@color/cartgreen"
+        app:mbn_selectedIconColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="#FBF7F7"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="#8F9BAB"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_shadowColor="#1f212121" />-->
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:layout_width="match_parent"
+        android:background="#fff"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_badgeColor="#58B1FF"
+        android:layout_alignParentBottom="true"
+        app:cnb_iconColor="#222"
+        app:cnb_menuResource="@menu/activity_home_page_drawer"
+        android:layout_marginTop="-60dp"
+        android:layout_gravity="bottom"
+        app:cnb_backgroundColor="#222"
+        android:id="@+id/bottomNavigation"
+        android:layout_height="60dp"/>
+
+
+
+
+
+</RelativeLayout>

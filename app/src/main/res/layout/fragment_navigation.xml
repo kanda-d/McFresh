@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#FFFEF9"
+    android:clickable="false"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:weightSum="2"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="@font/rubikmedium"
+                        android:textColor="@color/cartgreen"
+                        android:textSize="24dp"
+                        android:text="Kanha Agrawal"
+                        android:id="@+id/user_navName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="35dp"
+                        android:layout_weight="1"
+                        android:textColor="#9A9A9A"
+                        android:text="kanha@gmail.com"
+                        android:id="@+id/user_navId"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="60dp"
+                        android:layout_weight="1"
+                        android:textColor="#E53935"
+                        android:text="View Profile"
+                        android:textSize="10dp"
+                        android:id="@+id/viewProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/showPro"
+                    android:layout_weight="1"
+                    android:onClick="openProfile"
+                    android:layout_width="155dp"
+                    android:layout_height="70dp"
+                    android:src="@raw/profile" />
+
+
+            </LinearLayout>
+
+            <View
+                android:background="#B0D5D5D5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#636363"
+                android:textSize="18dp"
+                android:layout_marginHorizontal="20dp"
+                android:text="Choose Options"
+                android:drawablePadding="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#515151"
+                    android:id="@+id/ordersNav"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13dp"
+                    android:drawablePadding="25dp"
+                    android:drawableLeft="@drawable/ic_order_mennu"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="My Orders"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                android:textStyle="bold"
+                android:textColor="#515151"
+                android:textSize="13dp"
+                android:id="@+id/favNav"
+                android:layout_marginHorizontal="20dp"
+                android:text="Favourites"
+                android:drawablePadding="25dp"
+                android:drawableLeft="@drawable/ic_favorite_menu"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#515151"
+                    android:textSize="13dp"
+                    android:id="@+id/delNav"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Your Deliveries"
+                    android:drawablePadding="25dp"
+                    android:drawableLeft="@drawable/ic_delive_icon"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingVertical="7dp"
+                android:paddingLeft="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:id="@+id/walletNav"
+                    android:textColor="#515151"
+                    android:textSize="13dp"
+                    android:drawablePadding="25dp"
+                    android:drawableLeft="@drawable/ic_wallet_icon"
+                    android:layout_marginVertical="5dp"
+                    android:text="My Wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingVertical="7dp"
+                android:paddingLeft="22dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="#515151"
+                    android:textSize="13dp"
+                    android:id="@+id/profileNav"
+                    android:layout_marginVertical="5dp"
+                    android:text="My Account"
+                    android:drawablePadding="25dp"
+                    android:drawableLeft="@drawable/icon_ic_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#515151"
+                android:drawablePadding="25dp"
+                android:drawableLeft="@drawable/ic_about_con"
+                android:textSize="13dp"
+                android:id="@+id/queryNav"
+                android:layout_marginHorizontal="20dp"
+                android:text="Any Query"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+                <View
+                    android:background="#B0D5D5D5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#636363"
+                    android:textSize="18dp"
+                    android:id="@+id/aboutNav"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="About"
+                    android:drawablePadding="25dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:background="#B0D5D5D5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"/>
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#515151"
+                    android:textSize="14dp"
+                    android:id="@+id/feedNav"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Send Feedback"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#515151"
+                    android:textSize="14dp"
+                    android:id="@+id/termNav"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Terms &amp; Conditions"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#515151"
+                    android:textSize="14dp"
+                    android:id="@+id/logNav"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Logout"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

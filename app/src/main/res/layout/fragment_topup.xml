@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:clickable="false"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/balance"
+                android:textSize="17dp"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="#444"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:text="Wallet Balance  :  \u20B90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="20dp"
+            android:id="@+id/amountTop"
+            android:inputType="number"
+            android:hint="\u20B90"
+            android:maxLength="6"
+            android:textColor="#4A4A4A"
+            android:fontFamily="@font/rubikregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:id="@+id/add50"
+                android:textColor="#222"
+                android:layout_marginHorizontal="10dp"
+                android:text="+ \u20B950"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:background="@drawable/border"
+                android:layout_height="40dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:textColor="#222"
+                android:layout_marginHorizontal="10dp"
+                android:text="+ \u20B9100"
+                android:layout_weight="1"
+                android:id="@+id/add100"
+                android:textSize="16dp"
+                android:background="@drawable/border"
+                android:layout_height="40dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="#222"
+                android:text="+ \u20B9200"
+                android:id="@+id/add200"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:background="@drawable/border"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:id="@+id/addMoneyWallet"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_bg_main"
+            android:layout_height="35dp" >
+
+            <TextView android:id="@+id/login_text"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="17dp"
+                android:layout_centerInParent="true"
+                android:text="Add Money" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:id="@+id/loginProgress"
+                android:indeterminateTint="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:indeterminateTintMode="src_in" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Wallet History"
+        android:textSize="17dp"
+        android:textColor="#444"
+        android:fontFamily="@font/rubikmedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginHorizontal="6dp"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/updateTopHistory"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="2dp"
+                android:elevation="3dp"
+                android:paddingBottom="50dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/topup_wallet_hitory_recy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

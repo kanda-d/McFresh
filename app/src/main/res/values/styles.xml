@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="tagb">
+        <item name="android:background">@drawable/tags_sel_bg</item>
+        <item name="colorPrimaryDark">@color/fontWhite</item>
+    </style>
+
+
+
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/bottombg</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/bottombg</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/bottombg</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="selectAddress">
+        <item name="android:backgroundTint">@color/cartgreen</item>
+        <item name="android:textColor">@color/fontWhite</item>
+    </style>
+    <style name="notselectAddress">
+        <item name="android:textColor">#686868</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">8sp</item>
+    </style>
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+
+</resources>

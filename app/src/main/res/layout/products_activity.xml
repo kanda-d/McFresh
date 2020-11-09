@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/progressLinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/checkoutProductBtn"
+            android:textSize="15dp"
+            android:onClick="viewCart"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:background="@drawable/btn_bg_main"
+            android:layout_height="40dp"
+            android:text="Checkout"/>
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:elevation="1dp"
+            android:src="@raw/loader"
+            android:background="#fff"
+            android:padding="170dp"
+            android:layout_marginTop="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/updateImgProgress"/>
+
+
+    <LinearLayout
+        android:id="@+id/FormDispaly"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/searchProducts"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:elevation=".5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:drawablePadding="10dp"
+                android:hint="Search Products"
+                android:drawableLeft="@drawable/sidepadding"
+                android:background="@drawable/search_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="150dp"
+                android:layout_marginTop="-10dp"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+            <FrameLayout
+                android:onClick="openCart"
+                android:layout_toRightOf="@id/tvText"
+                android:layout_centerVertical="true"
+                style="?attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/cartIcon"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_cart_icon"/>
+
+
+
+            </FrameLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+        </LinearLayout>
+
+
+       <!-- <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:id="@+id/horizontalScrollView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group"
+                android:layout_marginBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="18dp"
+                app:checkedChip="@+id/chip_program"
+                app:chipSpacingHorizontal="18dp"
+                app:chipSpacingVertical="16dp"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:hint="pulses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t13"
+                    android:checked="true"
+                    android:text="Pulses"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t2"
+                    android:hint="oils"
+                    android:text="Edible Oils"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1"
+                    android:hint="atta"
+                    android:text="Atta &amp; Other Flours"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t4"
+                    android:hint="spices"
+                    android:text="Spices"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+                <com.google.android.material.chip.Chip
+                    android:hint="snacks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t7"
+                    android:text="Biscuits, Snacks &amp; Chocolate"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t5"
+                    android:text="Breakfast &amp; Dairy"
+                    android:hint="dairy"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t6"
+                    android:text="Packaged Food"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:hint="food"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t3"
+                    android:hint="salt"
+                    android:text="Salt &amp; Sugar"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+                <com.google.android.material.chip.Chip
+                    android:hint="Rice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t28"
+                    android:text="Rice &amp; Other Grains"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+
+                <com.google.android.material.chip.Chip
+                    android:hint="ghee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t18"
+                    android:text="Ghee &amp; Vanaspati"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+                <com.google.android.material.chip.Chip
+                    android:hint="beverages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t19"
+                    android:text="Beverages"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+
+
+
+
+
+                <com.google.android.material.chip.Chip
+                    android:hint="dry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t21"
+                    android:text="Dry Fuits &amp; Nuts"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+                <com.google.android.material.chip.Chip
+                    android:hint="care"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t20"
+                    android:text="Personal Care"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+                <com.google.android.material.chip.Chip
+                    android:hint="house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t9"
+                    android:text="Household Items"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+
+
+
+
+                <com.google.android.material.chip.Chip
+                    android:hint="baby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t8"
+                    android:text="Baby Care"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:paddingVertical="7dp"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Items"
+                    android:id="@+id/t11"
+                    android:hint="other"
+                    app:chipStrokeColor="@color/cartgreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rubikblack"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:chipStrokeWidth="1.5dp"
+                    app:chipBackgroundColor="@drawable/chip_selected_non"
+                    android:textColor="@drawable/chip_selected_text_non"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:textSize="20dp"
+                    android:layout_marginRight="50dp"
+                    android:paddingVertical="7dp"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+-->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/sCroll"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingBottom="75dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/productsGridRecy"
+                    android:scrollbars="vertical"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

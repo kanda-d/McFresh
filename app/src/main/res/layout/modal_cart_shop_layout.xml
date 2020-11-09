@@ -1,0 +1,185 @@
+<RelativeLayout
+    android:layout_marginVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_weight="1"
+            android:id="@+id/pro_thumb"
+            android:layout_marginRight="10dp"
+            android:src="@raw/placeholder"
+            android:layout_width="280dp"
+            android:layout_height="80dp"/>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/side_green"
+                android:text="Mama chicken and the best chiken"
+                android:id="@+id/pro_title"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginVertical="2dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/pro_desc"
+                android:textSize="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pro_price"
+                android:textSize="13dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/rubikmediumitalic"
+                android:text="\u20B9158"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#454545"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="100dp"
+            android:layout_gravity="right|bottom"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="5dp"
+                android:id="@+id/addtoCart"
+                android:textAlignment="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:text=" Add "
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
+                android:backgroundTint="@color/cartgreen"
+                android:textSize="12dp"
+                android:background="@drawable/btn_bg_login"
+                android:textColor="#fff"/>
+
+
+            <LinearLayout
+                android:id="@+id/qtyBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@drawable/border_cart"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_width="wrap_content"
+                    android:paddingHorizontal="1.8dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/cartgreen"
+                    android:layout_height="20dp">
+
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:id="@+id/removeQty"
+                        android:paddingHorizontal="2dp"
+                        android:layout_width="23dp"
+                        android:paddingTop="-1dp"
+                        android:src="@drawable/remove_cart_btn"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:textSize="12dp"
+                        android:background="#fff"
+                        android:id="@+id/qtyUpdate"
+                        android:paddingHorizontal="7dp"
+                        android:paddingTop="1dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent"
+                        android:text="100"/>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addQty"
+                        android:paddingHorizontal="2dp"
+                        android:paddingTop="-1dp"
+                        android:layout_width="23dp"
+                        android:src="@drawable/add_cart_btn"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="11dp"
+                    android:id="@+id/priceUpdate"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="24dp"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B90"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:id="@+id/customize"
+                android:visibility="gone"
+                android:textSize="11dp"
+                android:text="customizable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

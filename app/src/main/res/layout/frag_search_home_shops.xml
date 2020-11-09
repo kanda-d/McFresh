@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/FormDispaly"
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:src="@raw/loader"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="#fff"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="130dp"
+            android:id="@+id/updateImgProgress"/>
+
+        <ImageView
+            android:src="@raw/addfav"
+            android:layout_marginTop="150dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/notFound"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/rl_mainActionbar"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:onClick="backtoActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginVertical="10dp"
+                android:layout_toLeftOf="@+id/iv_menu"
+                android:layout_weight="1"
+                android:src="@drawable/backbtn_tool_black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textHeader"
+                android:textAlignment="center"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Category"
+                android:textStyle="bold"
+                android:textColor="@color/cartgreen"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_toRightOf="@id/tvText"
+                    android:layout_centerVertical="true"
+                    style="?attr/actionButtonStyle"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cartheader"/>
+
+
+                    <TextView
+                        android:id="@+id/cart_badge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|end|bottom"
+                        android:layout_marginEnd="-5dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:text="0"
+                        android:textSize="10sp"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:paddingTop="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingBottom="75dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/all_fav_shops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

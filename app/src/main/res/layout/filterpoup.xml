@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/white_bg"
+    android:paddingBottom="8dp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:id="@+id/shopName"
+            android:text="Filter shops"
+            android:layout_height="wrap_content"/>
+
+
+    <View
+        android:layout_marginLeft="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E7E7"/>
+
+
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/filterGroup"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text=" Popularity"
+                    android:textSize="16dp"
+                    android:id="@+id/popularity"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#6C6C6C"
+                    android:fontFamily="@font/rubikregular"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:text=" Rating: High to Low"
+                    android:textSize="16dp"
+                    android:id="@+id/rating"
+                    android:textColor="#6C6C6C"
+                    android:fontFamily="@font/rubikregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:text=" Cost: Low to High"
+                    android:textSize="16dp"
+                    android:id="@+id/costL"
+                    android:textColor="#6C6C6C"
+                    android:fontFamily="@font/rubikregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:text=" Cost: High to Low"
+                    android:textSize="16dp"
+                    android:id="@+id/costH"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#6C6C6C"
+                    android:fontFamily="@font/rubikregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+            </RadioGroup>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cartgreen"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/btn_bg_main"
+            android:textSize="17dp"
+            android:textAllCaps="false"
+            android:id="@+id/filterApply"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_height="40dp"
+            android:text="Filter Shops"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

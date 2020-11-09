@@ -1,0 +1,204 @@
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <fragment
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/colony"
+        tools:context="com.example.priyanka.mapsdemo.MapsActivity"/>
+
+    <ImageView
+        android:src="@drawable/backbtn_tool_black"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="50dp"/>
+
+
+        <LinearLayout
+            android:background="#fff"
+            android:id="@+id/colony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="#222"
+                        android:id="@+id/useCurrent"
+                        android:layout_marginLeft="10dp"
+                        android:text="Select delivery location "
+                        android:layout_height="wrap_content"/>
+
+                       <View
+                           android:background="#9EDDDDDD"
+                           android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="8dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"/>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:text="YOUR LOCATION "
+                        android:layout_height="wrap_content"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:textSize="13dp"
+                        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+                        android:textStyle="bold"
+                        android:textColor="#575757"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:onClick="editAddress"
+                        android:paddingBottom="10dp"
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/location"
+                        android:layout_marginLeft="10dp"
+                        android:text="  Defence Colony, Civil Lines"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="-15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <HorizontalScrollView
+                        android:scrollbars="none"
+                        android:id="@+id/horizontalScrollView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingConstraints">
+
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/chip_group"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="10dp"
+                            app:checkedChip="@+id/chip_program"
+                            app:chipSpacingHorizontal="10dp"
+                            app:chipSpacingVertical="10dp"
+                            app:singleSelection="true">
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/home"
+                                android:text="Home"
+                                app:chipStrokeColor="@color/cartgreen"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/rubikblack"
+                                style="@style/Widget.MaterialComponents.Chip.Choice"
+                                app:chipStrokeWidth="1dp"
+                                app:chipBackgroundColor="@drawable/chip_selected_non"
+                                android:textColor="@drawable/chip_selected_text_non"
+                                android:theme="@style/Theme.MaterialComponents.Light"
+                                android:textSize="7dp"/>
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/office"
+                                android:text="Office"
+                                app:chipStrokeColor="@color/cartgreen"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/rubikblack"
+                                style="@style/Widget.MaterialComponents.Chip.Choice"
+                                app:chipStrokeWidth="1dp"
+                                app:chipBackgroundColor="@drawable/chip_selected_non"
+                                android:textColor="@drawable/chip_selected_text_non"
+                                android:theme="@style/Theme.MaterialComponents.Light"
+                                android:textSize="7dp"/>
+
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/other"
+                                android:text="Other"
+                                app:chipStrokeColor="@color/cartgreen"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/rubikblack"
+                                style="@style/Widget.MaterialComponents.Chip.Choice"
+                                app:chipStrokeWidth="1dp"
+                                app:chipBackgroundColor="@drawable/chip_selected_non"
+                                android:textColor="@drawable/chip_selected_text_non"
+                                android:theme="@style/Theme.MaterialComponents.Light"
+                                android:textSize="8sp"/>
+
+
+
+
+                        </com.google.android.material.chip.ChipGroup>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_bg_main"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:onClick="confirmLocation"
+                    android:textColor="#fff"
+                    android:inputType="text"
+                    android:layout_height="35dp"
+                    android:id="@+id/setLocationbtn"
+                    android:text="Confirm Location"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

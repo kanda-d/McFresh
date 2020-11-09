@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+
+    <RelativeLayout
+        android:id="@+id/FormDispaly"
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:background="#fff"
+            android:src="@raw/loader"
+            android:layout_gravity="center"
+            android:padding="80dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/updateImgProgress"/>
+
+        <ScrollView
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingBottom="75dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/enterMsg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.068"
+                    tools:layout_editor_absoluteX="-21dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addReview"
+                        android:weightSum="2"
+                        android:layout_marginLeft="-7dp"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+                            <RatingBar
+                                android:id="@+id/RatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:stepSize="0.1"/>
+                        </RelativeLayout>
+
+
+                        <EditText
+                            android:id="@+id/reviewEdit"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:maxLines="3"
+                            android:inputType="text|textMultiLine"
+                            android:elevation=".5dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:textSize="16dp"
+                            android:hint="Write your experience"
+                            android:gravity="top"
+                            android:padding="10dp"
+                            android:background="@drawable/search_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:paddingHorizontal="15dp"
+                            android:layout_margin="15dp"
+                            android:layout_gravity="right"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_bg_main"
+                            android:id="@+id/submitButton"
+                            android:text="Submit Review"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"/>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/userReview"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="10dp"
+                        android:layout_margin="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="1dp"
+                        app:contentPadding="10dp"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"
+                                android:text="Your Review"
+                                android:textSize="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp">
+
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:id="@+id/starUserName"
+                                    android:textSize="16dp"
+                                    android:layout_marginVertical="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ramesh Galgotiya"
+                                    android:textColor="@color/black"/>
+
+
+                                <RelativeLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" >
+
+                                    <RatingBar
+                                        android:id="@+id/starUserRating"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:numStars="5"
+                                        android:stepSize="0.1"
+                                        android:isIndicator="true" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+
+                            <TextView
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:textSize="12dp"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/starUserReview"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubikregular"
+                        android:layout_marginVertical="30dp"
+                        android:text="Other Reviews"
+                        android:textColor="#444"
+                        android:textSize="18dp" />
+
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/all_ratings_shops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

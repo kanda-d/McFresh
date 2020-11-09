@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:src="@raw/m5"
+                    android:scaleType="fitXY"
+                    android:id="@+id/mainbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:src="@raw/m3"
+                    android:scaleType="fitXY"
+                    android:id="@+id/mainbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <TextView
+                android:text="See Categories"
+                android:textStyle="bold|italic"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:columnCount="3"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c_pick"
+                    android:layout_weight="1"
+                    android:layout_margin="9dp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/electric"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/other" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/electric"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Pick &amp; Drop"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
+                    android:id="@+id/c_food"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_food"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/food" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/iv_food"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="Foods"
+                            android:textSize="12dp"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c_gro"
+                    android:layout_weight="1"
+                    android:layout_margin="9dp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/electric"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/grocery" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/electric"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Groceries"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c_fruit"
+                    android:layout_weight="1"
+                    android:layout_margin="9dp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="5dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/electric"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/veg_gro_i" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/electric"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Fruits &amp; Veggies"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c_med"
+                    android:layout_weight="1"
+                    android:layout_margin="9dp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/electric"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/medical" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/electric"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Medicines"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
+                    android:id="@+id/c_meat"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_food"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/meat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/iv_food"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Chicken &amp; Meat"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c_pet"
+                    android:layout_weight="1"
+                    android:layout_margin="9dp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/electric"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/pet" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/electric"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Pet Supply"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
+                    android:id="@+id/c_cos"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_food"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/cos" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/iv_food"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Cosmetics"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
+                    android:id="@+id/c_baker"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_food"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/baker" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/iv_food"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Bakers"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
+                    android:id="@+id/c_state"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_food"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/stat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/iv_food"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                           android:textSize="12dp"
+                            android:text="Stationaries "
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c_gadget"
+                    android:layout_weight="1"
+                    android:layout_margin="9dp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/electric"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/gadget" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/electric"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Gadgets"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c_gift"
+                    android:layout_weight="1"
+                    android:layout_margin="9dp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/electric"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@raw/gif" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/electric"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="Gifts"
+                            android:textColor="@color/themecolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+
+            <TextView
+                android:text="McFresh Store"
+                android:textStyle="bold|italic"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/updateImgProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/productsGridRecy"
+                    android:scrollbars="vertical"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/food"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text="Prime Shops"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/food"
+                    android:layout_weight="1"
+                    android:id="@+id/seeAllPrimes"
+                    android:text="See All"
+                    android:textAlignment="textEnd"
+                    android:textColor="#787878"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ProgressBar
+                    android:layout_width="120dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/progressPrime"
+                    android:background="#fff"
+                    android:padding="50dp"
+                    android:layout_height="180dp"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/primeGridRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </FrameLayout>
+
+
+
+            <TextView
+                android:text="McFresh Store"
+                android:textStyle="bold|italic"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:src="@raw/b1"
+                android:id="@+id/openStore"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="20dp"
+                android:scaleType="centerCrop"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:background="@color/transparent"
+        android:id="@+id/hideCheck"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</RelativeLayout>

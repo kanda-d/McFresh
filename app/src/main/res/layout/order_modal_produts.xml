@@ -1,0 +1,80 @@
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_marginVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:elevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:layout_width="200dp"
+            android:id="@+id/proIcon"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/proTitle"
+                android:layout_height="wrap_content"
+                android:text="Udad ki Dal"
+                android:textColor="#222"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="11dp"
+                android:id="@+id/totalDesc"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+
+
+
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:id="@+id/proDesc"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:text="1 X 50"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="200"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/proprice" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

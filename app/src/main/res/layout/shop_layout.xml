@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/progressLinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" />
+
+    <FrameLayout
+        android:id="@+id/showBeforeLoadFrame"
+        android:elevation="4dp"
+        android:visibility="gone"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:src="@raw/loader"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/updateImgProgress"/>
+
+    </FrameLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:id="@+id/viewCart"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:background="@drawable/btn_bg_main"
+                android:layout_height="40dp"
+                android:text="Checkout"/>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="100dp"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bgBanner"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/ph_product"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#5B000000"
+                app:layout_constraintBottom_toBottomOf="@+id/bgBanner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/bgBanner"
+                app:layout_constraintTop_toTopOf="@+id/bgBanner"
+                app:layout_constraintVertical_bias="0.0" >
+
+            <CheckBox
+                android:id="@+id/fav_change"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/fav_check_selecter"
+                android:elevation="3dp"
+                android:layout_marginTop="13dp"
+                android:button="@null" />
+        </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_share_svg"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:onClick="Sharing"
+                android:layout_alignParentRight="true"
+                app:layout_constraintBottom_toBottomOf="@+id/bgBanner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.958"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/bgBanner"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sTitle"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:fontFamily="@font/rubikregular"
+                android:text="Aahar Retaurent"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/sDiscount"
+                    android:textSize="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubikregular"
+                    android:text="60% Off"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#00AF08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cartValue"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/sDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginVertical="15dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/rubikregular"
+                android:text="Amount debited from Wallet for Transfer Amount to Merchant M465891. hi"
+                android:textColor="#656565"
+                android:textSize="12dp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/open"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rubikregular"
+                    android:text="Open Now -"
+                    android:textColor="#43A047"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/sTiming"
+                    android:layout_alignRight="@+id/open"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="70dp"
+                    android:fontFamily="@font/rubikregular"
+                    android:text="10am - 11pm (Everyday)"
+                    android:textColor="#737373"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+<!--
+
+        <LinearLayout
+            android:weightSum="2"
+            android:id="@+id/clickRating"
+            android:elevation="2dp"
+            android:background="@drawable/backgorund_low_radius"
+            android:layout_marginVertical="20dp"
+            android:padding="10dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Add Reviews"
+                android:textSize="17dp"
+                android:fontFamily="@font/rubikregular"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/sRating"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#FFB300"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+-->
+
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:drawablePadding="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Veg Only"
+                android:layout_height="wrap_content"/>
+
+
+            <Switch
+                android:theme="@style/Theme.MyTheme"
+                android:id="@+id/vegStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#595959"
+                android:textSize="12dp"
+                android:layout_marginVertical="12dp"
+                android:textStyle="bold"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/searchHome"
+            android:layout_weight="1"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:visibility="gone"
+            android:elevation=".5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="16dp"
+            android:drawablePadding="5dp"
+            android:hint="Search for any item"
+            android:drawableLeft="@drawable/sidepadding"
+            android:background="@drawable/search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+
+
+
+        <RelativeLayout
+            android:layout_marginVertical="12dp"
+            android:elevation="1dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <ProgressBar
+                android:id="@+id/proPro"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ShopOffersRecycler"
+                android:layout_marginTop="14dp"
+                android:scrollbars="vertical"
+                android:layout_marginHorizontal="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginVertical="12dp"
+            android:layout_marginHorizontal="12dp"
+            android:elevation="1dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/sAddress"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubikregular"
+                android:text="26/118, Opposite Income Tax building, Sanjay Place, Civil Lines, Agra"
+                android:textColor="#737373"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+

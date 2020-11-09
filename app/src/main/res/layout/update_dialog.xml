@@ -1,0 +1,194 @@
+
+<RelativeLayout
+    android:elevation="1dp"
+    android:orientation="vertical"
+    android:gravity="center|center_vertical|center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bg"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    tools:ignore="MissingConstraints"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@raw/airoupdate" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:textColor="#202020"
+                        android:layout_weight="1"
+                        android:text="Share with Friends &amp; Family"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/versionCode"
+                        android:textColor="@color/cartgreen"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:text="McFresh"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#5E5E5E"
+                    android:textSize="12dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/textUpdate"
+                    android:text="⦿  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="#5E5E5E"
+                    android:textSize="12dp"
+                    android:lineSpacingExtra="11dp"
+                    android:layout_toRightOf="@id/textUpdate"
+                    android:text="Spread Flado with love."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#5E5E5E"
+                        android:textSize="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:id="@+id/textUpdate"
+                        android:text="⦿  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="#5E5E5E"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_toRightOf="@id/textUpdate"
+                        android:text="Share more and get extra discount on every order."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#5E5E5E"
+                        android:textSize="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:id="@+id/textUpdate"
+                        android:text="⦿  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="#5E5E5E"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="11dp"
+                        android:layout_toRightOf="@id/textUpdate"
+                        android:text="Earn 10 Rs. on every share."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updateButton"
+                android:layout_marginHorizontal="50dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/cartgreen"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/btn_bg_main"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:text="Share Now"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

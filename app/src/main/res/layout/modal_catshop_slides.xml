@@ -1,0 +1,47 @@
+<androidx.cardview.widget.CardView
+    android:layout_weight="1"
+    android:layout_marginHorizontal="7dp"
+    android:layout_width="110dp"
+    android:layout_height="100dp"
+    android:id="@+id/catClick"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/cat_banner"
+            android:src="@raw/placeholder"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cat_titile"
+            android:paddingTop="38dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="-100dp"
+            android:textAlignment="center"
+            android:elevation="3dp"
+            android:background="#6A000000"
+            android:singleLine="false"
+            android:text="Italian"
+            android:textColor="@color/fontWhite"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

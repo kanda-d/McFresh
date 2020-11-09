@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/progressLinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/checkoutProductBtn"
+        android:textSize="15dp"
+        android:onClick="viewCart"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="@drawable/btn_bg_main"
+        android:layout_height="40dp"
+        android:text="Checkout"/>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:elevation="1dp"
+        android:src="@raw/loader"
+        android:background="#fff"
+        android:padding="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/updateImgProgress"/>
+
+
+    <LinearLayout
+        android:id="@+id/FormDispaly"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/searchProducts"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:elevation=".5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:drawablePadding="10dp"
+                android:hint="Search Products"
+                android:drawableLeft="@drawable/sidepadding"
+                android:background="@drawable/search_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="150dp"
+                android:layout_marginTop="-10dp"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:onClick="openCart"
+                    android:layout_toRightOf="@id/tvText"
+                    android:layout_centerVertical="true"
+                    style="?attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cartIcon"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cartheader"/>
+
+                    <TextView
+                        android:id="@+id/cart_badge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|end|bottom"
+                        android:layout_marginEnd="-5dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:text="0"
+                        android:textSize="10sp"/>
+
+                </FrameLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/sCroll"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingBottom="75dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/productsGridRecy"
+                    android:scrollbars="vertical"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

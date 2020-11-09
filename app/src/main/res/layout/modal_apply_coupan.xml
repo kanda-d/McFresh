@@ -1,0 +1,99 @@
+<androidx.cardview.widget.CardView
+    android:layout_weight="1"
+    android:layout_marginVertical="10dp"
+    android:layout_margin="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    app:contentPadding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="-5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/promo_title"
+                android:drawablePadding="10dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="Rice Barik Dana!"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:id="@+id/promo_desc"
+                android:textColor="#222"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Get \u20B9158 OFF on order with Paytm Wallet. "/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:layout_marginRight="110dp"
+                android:id="@+id/promo_code"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="5dp"
+                android:backgroundTint="#FFEAEA"
+                android:background="@drawable/btn_bg_small"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="NOCOOKING"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/cartgreen"
+                android:text="APPLY"
+                android:id="@+id/promo_apply"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,50 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <LinearLayout
+            android:padding="0dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/cat_title_res"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/payment_arrow"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="Recommended"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="30 Items"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/cat_total_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
